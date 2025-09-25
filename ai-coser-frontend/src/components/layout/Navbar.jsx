@@ -7,9 +7,11 @@ export default function Navbar() {
       <div className="nav-inner">
         <Link to="/" className="brand">RolePlay</Link>
         <nav className="nav-links">
-          <Link to="/">首页</Link>
-          <a href="#" onClick={(e) => e.preventDefault()}>发现</a>
-          <a href="#" onClick={(e) => e.preventDefault()}>语音设置</a>
+          <Link to="/">Discover</Link>
+          <a href="#grid" onClick={(e)=>e.preventDefault() || document.getElementById("grid")?.scrollIntoView({behavior:"smooth"})}>
+            Characters
+          </a>
+          <Link to="/settings/voice">Voice</Link>
         </nav>
       </div>
     </header>

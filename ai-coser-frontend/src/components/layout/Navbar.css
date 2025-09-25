@@ -2,14 +2,14 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #fff;
-  border-bottom: 1px solid var(--border, #e5e5e5);
+  background: #141416;
+  border-bottom: 1px solid #2a2a2e;
 }
 
 .nav-inner {
-  width: min(1100px, 92vw);
+  width: min(1180px, 92vw);
   margin: 0 auto;
-  height: 56px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,13 +17,20 @@
 
 .brand {
   font-weight: 900;
-  letter-spacing: 0.06em;
+  letter-spacing: .06em;
   text-decoration: none;
-  color: #111;
+  color: #fff;
 }
 
 .nav-links a {
   margin-left: 16px;
   text-decoration: none;
-  color: #333;
+  color: #c9c9cf;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  background: #222227;
+  color: #fff;
 }

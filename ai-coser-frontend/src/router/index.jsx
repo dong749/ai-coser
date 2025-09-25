@@ -1,15 +1,17 @@
-import { lazy } from "react";
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App.jsx";
-
-const Home = lazy(() => import("../pages/Home/Home.jsx"));
+import { createBrowserRouter } from 'react-router-dom';
+import App from '../App.jsx';
+import Home from '../pages/Home/Home.jsx';
+import ComingSoon from '../pages/Common/ComingSoon.jsx';
 
 export const router = createBrowserRouter([
   {
+    path: '/',
     element: <App />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "*", element: <div style={{ padding: 24 }}>Not Found</div> }
-    ]
-  }
+      { index: true, element: <Home /> },
+      { path: '/search', element: <ComingSoon title="Search" /> },
+      { path: '/character/:id', element: <ComingSoon title="Character" /> },
+      { path: '*', element: <ComingSoon /> },
+    ],
+  },
 ]);

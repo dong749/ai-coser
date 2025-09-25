@@ -1,0 +1,29 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid var(--border, #e5e5e5);
+}
+
+.nav-inner {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #111;
+}
+
+.nav-links a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #333;
+}

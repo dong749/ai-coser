@@ -1,0 +1,6 @@
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+a { color: inherit; }

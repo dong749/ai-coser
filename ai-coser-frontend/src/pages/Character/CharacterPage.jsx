@@ -69,7 +69,6 @@ export default function CharacterPage() {
                             {(c.skills || []).map(s => <span key={s} className="skill">{s}</span>)}
                         </div>
                         <div className="char-actions">
-                            <a href="#chat" className="btn btn-primary">开始对话</a>
                             <Link to="/voice-settings" className="btn">语音设置</Link>
                         </div>
                     </div>

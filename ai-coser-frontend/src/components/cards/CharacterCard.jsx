@@ -8,11 +8,6 @@ export default function CharacterCard({ c }) {
         <img src={c.avatar} alt={c.name} className="char-avatar" />
         <div className="char-meta">
           <h3 className="char-name">{c.name}</h3>
-          <div className="char-tags">
-            {(c.tags || []).slice(0, 3).map(t => (
-              <span key={t} className="char-tag">{t}</span>
-            ))}
-          </div>
         </div>
       </div>
       <p className="char-desc">{c.description}</p>

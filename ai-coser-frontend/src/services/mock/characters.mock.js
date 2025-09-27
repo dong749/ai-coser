@@ -37,11 +37,11 @@ export async function searchCharacters({ q = '' } = {}) {
   const list = !kw
     ? DB
     : DB.filter(c =>
-        [c.name, c.description, ...(c.tags || []), ...(c.skills || [])]
-          .join(' ')
-          .toLowerCase()
-          .includes(kw),
-      );
+      [c.name, c.description, ...(c.tags || []), ...(c.skills || [])]
+        .join(' ')
+        .toLowerCase()
+        .includes(kw),
+    );
   // 模拟网络耗时
   await new Promise(r => setTimeout(r, 200));
   return { list };

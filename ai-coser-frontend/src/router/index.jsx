@@ -1,7 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App.jsx';
 import Home from '../pages/Home/Home.jsx';
-import ComingSoon from '../pages/Common/ComingSoon.jsx';
+import Search from '../pages/Search/Search.jsx';
+import CharacterPage from '../pages/Character/CharacterPage.jsx';
+import VoiceSettings from '../pages/VoiceSettings/VoiceSettings.jsx';
 
 export const router = createBrowserRouter([
   {
@@ -9,9 +11,9 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
-      { path: '/search', element: <ComingSoon title="Search" /> },
-      { path: '/character/:id', element: <ComingSoon title="Character" /> },
-      { path: '*', element: <ComingSoon /> },
+      { path: '/search', element: <Search /> },
+      { path: '/character/:id', element: <CharacterPage /> },
+      { path: '/voice-settings', element: <VoiceSettings /> },
     ],
   },
 ]);

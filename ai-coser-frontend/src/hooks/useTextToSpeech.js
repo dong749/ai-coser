@@ -1,4 +1,3 @@
-// hooks/useTextToSpeech.js
 import { Voice } from '../services';
 
 export function useTextToSpeech() {

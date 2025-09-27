@@ -1,6 +1,26 @@
 /* 最小化 reset，避免与组件样式冲突 */
-* { box-sizing: border-box; }
-html, body, #root { height: 100%; }
-body { margin: 0; }
-img { display: block; max-width: 100%; }
-button, input, textarea { font: inherit; color: inherit; }
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+    color: inherit;
+}

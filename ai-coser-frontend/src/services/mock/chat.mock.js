@@ -9,8 +9,8 @@ function buildReply({ characterId, lastUserText }) {
     characterId === 'socrates'
       ? '（苏格拉底）让我反问你：'
       : characterId === 'qinshihuang'
-      ? '（嬴政）朕倒要问：'
-      : '（哈利）我觉得：';
+        ? '（嬴政）朕倒要问：'
+        : '（哈利）我觉得：';
   const content = `${prefix}${lastUserText} 的关键在于……这是一个示例回复，用于前端联调。`;
   return { role: 'assistant', content };
 }
@@ -53,6 +53,6 @@ export async function streamChat({ characterId, history }) {
       };
       setTimeout(tick, 150);
     },
-    cancel() {},
+    cancel() { },
   });
 }

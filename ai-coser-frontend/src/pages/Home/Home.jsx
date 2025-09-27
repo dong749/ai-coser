@@ -1,4 +1,3 @@
-// src/pages/Home/Home.jsx
 // 主页：参考 dippy.ai 的信息密度与分区结构，包含：
 // - Hero 区（产品价值 + 示例对话预览）
 // - 精选角色（读取 services 层的 mock/api，前端可独立跑）

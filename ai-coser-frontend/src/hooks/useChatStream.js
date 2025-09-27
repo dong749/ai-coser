@@ -1,4 +1,3 @@
-// hooks/useChatStream.js
 // 统一处理 NDJSON 与 SSE，两种流式都能解析。
 // 用法：startStream({ characterId, history, onDelta, onDone, onError, signal })
 

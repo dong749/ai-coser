@@ -1,0 +1,123 @@
+.char-hero {
+    border-bottom: 1px solid var(--border);
+    background: var(--elevated);
+}
+
+.char-meta {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .char-meta {
+        grid-template-columns: 160px 1fr;
+        align-items: start;
+    }
+}
+
+.char-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    object-fit: cover;
+}
+
+.meta-right {
+    display: grid;
+    gap: 8px;
+    align-content: start;
+}
+
+.char-name {
+    margin: 0;
+    font-size: 24px;
+}
+
+.char-desc {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.char-tags,
+.char-skills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag,
+.skill {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+}
+
+.char-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+}
+
+.char-chat {
+    max-width: var(--container);
+    margin: 16px auto;
+    padding: 0 16px 24px;
+}
+
+/* Loading skeleton */
+.loading .avatar-skeleton {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+}
+
+.loading .text-skeleton {
+    height: 20px;
+    width: min(560px, 80%);
+    margin-top: 8px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, var(--surface), var(--surface-strong), var(--surface));
+    background-size: 200% 100%;
+    animation: sh 1.4s ease-in-out infinite;
+}
+
+.loading .text-skeleton.narrow {
+    width: min(420px, 60%);
+}
+
+@keyframes sh {
+    0% {
+        background-position: 0% 0
+    }
+
+    100% {
+        background-position: 200% 0
+    }
+}

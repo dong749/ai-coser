@@ -1,0 +1,19 @@
+/* 单条消息的样式（容器由 ChatPanel.css 控制） */
+.bubble {
+    padding: 10px 12px;
+    border-radius: 12px;
+    max-width: 80%;
+    border: 1px solid var(--border);
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.bubble.user {
+    justify-self: end;
+    background: var(--elevated);
+}
+
+.bubble.assistant {
+    justify-self: start;
+    background: var(--surface-strong);
+}

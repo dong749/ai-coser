@@ -1,0 +1,45 @@
+.inputbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid var(--border);
+    background: var(--elevated);
+    border-radius: 0 0 16px 16px;
+}
+
+.ib-left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.ib-input {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    resize: none;
+    min-height: 44px;
+    max-height: 160px;
+}
+
+.ib-send,
+.ib-stop {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    font-weight: 700;
+}
+
+.ib-send {
+    background: var(--brand);
+    color: #fff;
+    border-color: var(--brand);
+}
+
+.ib-stop {
+    background: var(--surface);
+    color: var(--text);
+}

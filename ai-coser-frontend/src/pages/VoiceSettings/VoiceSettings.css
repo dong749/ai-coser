@@ -1,0 +1,91 @@
+.vs-inner {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.vs-inner h1 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+}
+
+.muted {
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background: var(--elevated);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    display: grid;
+    gap: 12px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.row {
+    display: grid;
+    gap: 8px;
+}
+
+.row label {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+select,
+button,
+.ghost {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+}
+
+button {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: var(--border-strong);
+}
+
+button.ghost {
+    background: var(--elevated);
+}
+
+.level-wrap {
+    width: 100%;
+    height: 10px;
+    border-radius: 6px;
+    background: var(--surface-strong);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.level-bar {
+    height: 100%;
+    width: 100%;
+    transform-origin: left center;
+    background: var(--brand);
+}

@@ -1,0 +1,109 @@
+.chat-panel {
+    background: var(--elevated);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 420px;
+}
+
+.chat-header {
+    padding: 12px 12px 0 12px;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 12px;
+}
+
+.chat-header .avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.chat-header .meta {
+    display: grid;
+    gap: 6px;
+    align-content: start;
+}
+
+.chat-header .name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.chat-header .desc {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.skill-btn {
+    padding: 6px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.skill-btn+.skill-btn {
+    margin-left: 6px;
+}
+
+.chat-body {
+    padding: 12px;
+    display: grid;
+    gap: 10px;
+    align-content: start;
+    max-height: 520px;
+    overflow: auto;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.bubble {
+    padding: 10px 12px;
+    border-radius: 12px;
+    max-width: 80%;
+    border: 1px solid var(--border);
+}
+
+.bubble.user {
+    justify-self: end;
+    background: var(--elevated);
+}
+
+.bubble.assistant {
+    justify-self: start;
+    background: var(--surface-strong);
+}
+
+.chat-input {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    padding: 12px;
+}
+
+.chat-input input {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--elevated);
+    color: var(--text);
+}
+
+.chat-input button {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--brand);
+    color: #fff;
+    font-weight: 700;
+}
